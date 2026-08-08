@@ -16,4 +16,21 @@ def IsLeapYear():
     else:
         print(f"It is not a leap year")
 
-IsLeapYear()
+#IsLeapYear()
+
+# Check whether a person is eligible to vote.
+def EligibleVoter():
+    while True:
+        try:
+            age = int(input("Enter your age : "))
+            if age<0 or age >120:
+                print("please Enter correct age")
+                
+        except ValueError:
+            print("Please enter correct age")
+    if(age>=18):
+        print("You are eligible to Vote")
+    else:
+        print("You are not eligible to vote")
+
+EligibleVoter()
